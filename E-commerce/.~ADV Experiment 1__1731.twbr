@@ -1,0 +1,2011 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ecommerce' inline='true' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ecommerce' name='textscan.1d8lmb8037tfwy14z1n8g1bthdjs'>
+            <connection class='textscan' directory='/Users/pranaysinghvi/Library/CloudStorage/OneDrive-Personal/SPIT College/2)Class/Semester 7/4)ADV/1)Experiments/E-commerce' filename='ecommerce.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1d8lmb8037tfwy14z1n8g1bthdjs' name='ecommerce.csv' table='[ecommerce#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Order ID' ordinal='0' />
+            <column datatype='date' name='Order Date' ordinal='1' />
+            <column datatype='date' name='Ship Date' ordinal='2' />
+            <column datatype='real' name='Aging' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Product Category' ordinal='5' />
+            <column datatype='string' name='Product' ordinal='6' />
+            <column datatype='real' name='Sales' ordinal='7' />
+            <column datatype='integer' name='Quantity' ordinal='8' />
+            <column datatype='real' name='Discount' ordinal='9' />
+            <column datatype='real' name='Profit' ordinal='10' />
+            <column datatype='real' name='Shipping Cost' ordinal='11' />
+            <column datatype='string' name='Order Priority' ordinal='12' />
+            <column datatype='string' name='Customer ID' ordinal='13' />
+            <column datatype='string' name='Customer Name' ordinal='14' />
+            <column datatype='string' name='Segment' ordinal='15' />
+            <column datatype='string' name='City' ordinal='16' />
+            <column datatype='string' name='State' ordinal='17' />
+            <column datatype='string' name='Country' ordinal='18' />
+            <column datatype='string' name='Region' ordinal='19' />
+            <column datatype='string' name='Months' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1d8lmb8037tfwy14z1n8g1bthdjs' name='ecommerce.csv' table='[ecommerce#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Order ID' ordinal='0' />
+            <column datatype='date' name='Order Date' ordinal='1' />
+            <column datatype='date' name='Ship Date' ordinal='2' />
+            <column datatype='real' name='Aging' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Product Category' ordinal='5' />
+            <column datatype='string' name='Product' ordinal='6' />
+            <column datatype='real' name='Sales' ordinal='7' />
+            <column datatype='integer' name='Quantity' ordinal='8' />
+            <column datatype='real' name='Discount' ordinal='9' />
+            <column datatype='real' name='Profit' ordinal='10' />
+            <column datatype='real' name='Shipping Cost' ordinal='11' />
+            <column datatype='string' name='Order Priority' ordinal='12' />
+            <column datatype='string' name='Customer ID' ordinal='13' />
+            <column datatype='string' name='Customer Name' ordinal='14' />
+            <column datatype='string' name='Segment' ordinal='15' />
+            <column datatype='string' name='City' ordinal='16' />
+            <column datatype='string' name='State' ordinal='17' />
+            <column datatype='string' name='Country' ordinal='18' />
+            <column datatype='string' name='Region' ordinal='19' />
+            <column datatype='string' name='Months' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aging</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aging]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Aging</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipping Cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shipping Cost]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Shipping Cost</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Priority</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order Priority]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Order Priority</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Months]</local-name>
+            <parent-name>[ecommerce.csv]</parent-name>
+            <remote-alias>Months</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ecommerce.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]' role='measure' type='quantitative' />
+      <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Months)' hidden='true' name='[Action (Months)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Months]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Order Priority)' hidden='true' name='[Action (Order Priority)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Order Priority]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Product Category)' hidden='true' name='[Action (Product Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Product Category]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Country, State, City'>
+          <field>[Country]</field>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_10vxyhe06uga2j1dk040u00680oa.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2024 03:08:35 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Order ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51290</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>645</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ship Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>732</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aging</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Aging]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aging</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ship Mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Mode</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Category</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>802</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shipping Cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Shipping Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shipping Cost</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order Priority]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Priority</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51290</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2268</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segment</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3984</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1601</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Months]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ecommerce.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Product Category:nk]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#8074a8'>
+              <bucket>&quot;Auto &amp; Accessories&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;Fashion&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;Electronic&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;Home &amp; Furniture&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Car Pillow &amp; Neck Rest&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Shoe Rack&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Apple Laptop&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Keyboard&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Umbrellas&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Car &amp; Bike Care&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mouse&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Curtains&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Speakers&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Car Seat Covers&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sneakers&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Car Body Covers&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Running Shoes&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Iron&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Towels&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bed Sheets&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LCD&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Watch&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Formal Shoes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tablet&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Car Mat&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Samsung Mobile&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dinner Crockery&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sports Wear&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dinning Tables&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Suits&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fossil Watch&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Titak watch&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jeans&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tyre&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Car Speakers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sofa Covers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Car Media Players&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Shirts&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Beds&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LED&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fans&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;T - Shirts&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Casula Shoes&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sofas&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bike Tyres&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mixer/Juicer&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Ship Mode:nk]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;45788&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;First Class&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;Second Class&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;Same Day&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;Standard Class&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Order Priority:nk]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;Critical&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ecommerce.csv' id='ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390'>
+            <properties context=''>
+              <relation connection='textscan.1d8lmb8037tfwy14z1n8g1bthdjs' name='ecommerce.csv' table='[ecommerce#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Order ID' ordinal='0' />
+                  <column datatype='date' name='Order Date' ordinal='1' />
+                  <column datatype='date' name='Ship Date' ordinal='2' />
+                  <column datatype='real' name='Aging' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Product Category' ordinal='5' />
+                  <column datatype='string' name='Product' ordinal='6' />
+                  <column datatype='real' name='Sales' ordinal='7' />
+                  <column datatype='integer' name='Quantity' ordinal='8' />
+                  <column datatype='real' name='Discount' ordinal='9' />
+                  <column datatype='real' name='Profit' ordinal='10' />
+                  <column datatype='real' name='Shipping Cost' ordinal='11' />
+                  <column datatype='string' name='Order Priority' ordinal='12' />
+                  <column datatype='string' name='Customer ID' ordinal='13' />
+                  <column datatype='string' name='Customer Name' ordinal='14' />
+                  <column datatype='string' name='Segment' ordinal='15' />
+                  <column datatype='string' name='City' ordinal='16' />
+                  <column datatype='string' name='State' ordinal='17' />
+                  <column datatype='string' name='Country' ordinal='18' />
+                  <column datatype='string' name='Region' ordinal='19' />
+                  <column datatype='string' name='Months' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_07CB86CA6886414FA7A20853A224A14B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_A1C182AC7FC14CE9906D4683DFE613FB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#898989' fontname='monospace' fontsize='8'>The bar graph above illustrates the distribution of sales across different product categories. It&apos;s evident that Fashion leads as the top-selling category, reflecting the highest volume of sales. On the other hand, Electronics registers the lowest sales figures, indicating that it is the least popular category among customers.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]'>
+            <groupfilter function='level-members' level='[Order Priority]' user:ui-action-filter='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]</rows>
+        <cols>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Product Category:nk]</cols>
+      </table>
+      <simple-id uuid='{5DAE0A5E-D4C7-4CFD-9782-C1A610E34264}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>The chart shows profit distribution by Order Priority, with Medium priority yielding the highest profit and Low the lowest.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Order Priority:nk]' member='&quot;Critical&quot;' />
+              <groupfilter function='member' level='[none:Order Priority:nk]' member='&quot;High&quot;' />
+              <groupfilter function='member' level='[none:Order Priority:nk]' member='&quot;Low&quot;' />
+              <groupfilter function='member' level='[none:Order Priority:nk]' member='&quot;Medium&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' />
+              <text column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]' />
+              <color column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{636C4A91-807B-4ED2-BAEE-7042B487D11E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#898989' fontname='monospace'>The pie chart shows that Second Class is the most commonly used shipping mode, indicating a preference for this method due to factors like cost, delivery speed, or customer demand.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='ecommerce.csv' datatype='integer' name='[__tableau_internal_object_id__].[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='ecommerce.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]'>
+            <groupfilter function='level-members' level='[Order Priority]' user:ui-action-filter='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Ship Mode:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Ship Mode:nk]' member='&quot;First Class&quot;' />
+              <groupfilter function='member' level='[none:Ship Mode:nk]' member='&quot;Same Day&quot;' />
+              <groupfilter function='member' level='[none:Ship Mode:nk]' member='&quot;Second Class&quot;' />
+              <groupfilter function='member' level='[none:Ship Mode:nk]' member='&quot;Standard Class&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Ship Mode:nk]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='' />
+            <format attr='text-format' data-class='total' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='p0.00%' />
+            <format attr='text-align' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='auto' />
+            <format attr='text-orientation' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='0' />
+            <format attr='wrap' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='auto' />
+            <format attr='vertical-align' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='' />
+            <format attr='text-orientation' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Ship Mode:nk]' />
+              <wedge-size column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' />
+              <size column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' />
+              <text column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D1061807-A221-46C9-8BDB-A6FD4C2C3040}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>The timeline chart reveals a sales dip in February, the lowest point, and a peak in July, indicating significant seasonal fluctuations. These trends are important for planning inventory, marketing, and resources.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Months]' derivation='None' name='[none:Months:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]'>
+            <groupfilter function='level-members' level='[Order Priority]' user:ui-action-filter='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' field-type='quantitative' range-type='uniform' scope='rows' type='space' />
+            <encoding attr='space' class='1' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk] + [federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk])</rows>
+        <cols>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Months:nk]</cols>
+      </table>
+      <simple-id uuid='{8D766CFF-1299-47C3-80B2-9967D38FBF29}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Country:nk]' />
+              <color column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' />
+              <geometry column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Latitude (generated)]</rows>
+        <cols>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D3DB6058-96C8-484C-BC2D-74B80C08D55D}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#b07aa1' fontsize='28'>Total Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]'>
+            <groupfilter function='level-members' level='[Order Priority]' user:ui-action-filter='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#b07aa1' fontname='Google Sans' fontsize='18'>$</run>
+                <run fontalignment='0' fontcolor='#b07aa1' fontsize='20'><![CDATA[<[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{89B2CE7D-13CD-4E1F-8DCA-AE1BDFA881C0}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#b07aa1' fontsize='24'>Total Quantity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]'>
+            <groupfilter function='level-members' level='[Order Priority]' user:ui-action-filter='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Quantity:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#b07aa1' fontsize='20'>&lt;</run>
+                <run fontalignment='0' fontcolor='#b07aa1' fontsize='20'>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Quantity:qk]</run>
+                <run fontalignment='0' fontcolor='#b07aa1' fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{ED773D15-8AA4-41F0-97A1-EFAA2FC73271}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>The scatter plot shows a positive correlation between Sales and Profit, with higher sales generally leading to increased profitability.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce' name='federated.0m1afd105xegte1dmg1ap1gwb8ex' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1afd105xegte1dmg1ap1gwb8ex'>
+            <column datatype='string' name='[Months]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='None' name='[none:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='None' name='[none:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]'>
+            <groupfilter function='level-members' level='[Months]' user:ui-action-filter='[Action2_F5BE66AC31CB4AD2AFAB85967FB095D7]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]'>
+            <groupfilter function='level-members' level='[Order Priority]' user:ui-action-filter='[Action4_2BA8C6E92FE94B809E55B66B6D8DDC1F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]'>
+            <groupfilter function='level-members' level='[Product Category]' user:ui-action-filter='[Action1_07CB86CA6886414FA7A20853A224A14B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Sales:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Product Category)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Order Priority)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[Action (Months)]</column>
+            <column>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Sales:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.75762432813644409' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Profit:qk]</rows>
+        <cols>[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{85C68749-67D3-454B-9CEE-AC8AA18CFF22}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='83549' id='8' param='horz' type-v2='layout-flow' w='98698' x='651' y='15391'>
+            <zone h='83549' id='6' type-v2='layout-basic' w='98698' x='651' y='15391'>
+              <zone h='41776' id='3' name='Sheet 1' show-caption='true' show-title='false' w='49346' x='651' y='57164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41776' id='5' name='Sheet 2' show-caption='true' show-title='false' w='49352' x='49997' y='57164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41773' id='10' name='Sheet 3' show-caption='true' show-title='false' w='21195' x='28802' y='15391'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41773' id='13' name='Sheet 4' show-caption='true' show-title='false' w='49352' x='49997' y='15391'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41773' id='20' name='Sheet 8' show-caption='true' show-title='false' w='28151' x='651' y='15391'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='14331' id='16' type-v2='text' w='32627' x='651' y='1060'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#b07aa1' fontsize='26'>E-commerce Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14331' id='17' name='Sheet 6' w='24672' x='50000' y='1060'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='14331' id='18' name='Sheet 7' w='24677' x='74672' y='1060'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='14331' id='23' type-v2='text' w='16722' x='33278' y='1060'>
+            <formatted-text>
+              <run fontcolor='#000000' fontsize='12'>Name - Pranay Singhvi</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontsize='12'>UID- 2021300126</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='11523' id='9' name='Sheet 2' pane-specification-id='0' param='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]' show-title='false' type-v2='color' w='8950' x='89015' y='78675' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97880' id='24' param='vert' type-v2='layout-flow' w='98698' x='651' y='1060'>
+                <zone forceUpdate='true' h='14333' id='16' type-v2='text' w='32628' x='651' y='1060'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#b07aa1' fontsize='26'>E-commerce Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14333' id='23' type-v2='text' w='16721' x='33279' y='1060'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='12'>Name - Pranay Singhvi</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>UID- 2021300126</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='107' h='14333' id='17' is-fixed='true' name='Sheet 6' w='24674' x='50000' y='1060'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='107' h='14333' id='18' is-fixed='true' name='Sheet 7' w='24675' x='74674' y='1060'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41773' id='20' is-fixed='true' name='Sheet 8' show-caption='true' show-title='false' w='28153' x='651' y='15393'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41773' id='10' is-fixed='true' name='Sheet 3' show-caption='true' show-title='false' w='21194' x='28804' y='15393'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41773' id='13' is-fixed='true' name='Sheet 4' show-caption='true' show-title='false' w='49351' x='49998' y='15393'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41774' id='3' is-fixed='true' name='Sheet 1' show-caption='true' show-title='false' w='49347' x='651' y='57166'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41774' id='5' is-fixed='true' name='Sheet 2' show-caption='true' show-title='false' w='49351' x='49998' y='57166'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11523' id='9' name='Sheet 2' pane-specification-id='0' param='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]' show-title='false' type-v2='color' w='8950' x='89015' y='78675'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7C4B656A-AE22-46E6-B35E-8450879D5EC0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE7CE546-8DC5-46D7-A528-6C117D9F3F9F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB519BD8-F3CF-44D3-B986-B9FF8F614CCC}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[none:Ship Mode:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[__tableau_internal_object_id__].[pcto:cnt:ecommerce.csv_99A3A2B767FD4C849A662CF8EAD28390:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7EEC406-E928-4416-8F27-098D4C4723BA}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF850DF2-732B-4A2D-92DB-673DA727E724}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0m1afd105xegte1dmg1ap1gwb8ex].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{756AF7B9-8B4E-444E-86D6-B0732900B529}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79F7036C-B322-4A78-8DF2-36197A8C6AB1}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A6E9AFF-F029-40E4-8FE9-F649CA17EB19}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DCE1F6DC-0D78-4F2D-9E2C-D48B5443AE40}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 7'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{A5C3E3D7-AED4-4D5F-8EDC-93A765B8455A}' />
+    </window>
+  </windows>
+</workbook>
